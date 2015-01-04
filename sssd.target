@@ -1,6 +1,5 @@
-#  This file is part of th-tools
 [Unit]
-Description=TH DNS/SSSD barrier
+Description=DNS/SSSD barrier
 After=named.service dnsmasq.service
 Before=sssd.service
 

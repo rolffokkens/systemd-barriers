@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/AICCU barrier
+After=syslog.target network.target named.service dnsmasq.service
+Before=aiccu.service
+
+[Install]
+WantedBy=multi-user.target
