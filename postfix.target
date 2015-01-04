@@ -1,0 +1,8 @@
+#  This file is part of th-tools
+[Unit]
+Description=TH Network/Postfix barrier
+After=network-online.target
+Before=postfix.service
+
+[Install]
+WantedBy=multi-user.target

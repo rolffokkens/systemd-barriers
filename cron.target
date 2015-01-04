@@ -1,0 +1,8 @@
+#  This file is part of th-tools
+[Unit]
+Description=TH SSSD/cron barrier
+After=sssd.service network-online.target
+Before=crond.service
+
+[Install]
+WantedBy=multi-user.target
