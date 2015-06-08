@@ -1,0 +1,7 @@
+[Unit]
+Description=OpenVPN/keepalived barrier
+After=openvpn.service
+Before=keepalived.service
+
+[Install]
+WantedBy=multi-user.target
