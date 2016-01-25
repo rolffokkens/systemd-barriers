@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/Xinetd barrier
+After=named.service dnsmasq.service
+Before=xinetd.service
+
+[Install]
+WantedBy=multi-user.target
