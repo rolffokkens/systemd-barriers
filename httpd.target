@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/HTTPD barrier
+After=named.service dnsmasq.service
+Before=httpd.service
+
+[Install]
+WantedBy=multi-user.target
