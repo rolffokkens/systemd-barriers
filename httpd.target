@@ -1,6 +1,6 @@
 [Unit]
 Description=DNS/HTTPD barrier
-After=named.service dnsmasq.service
+After=named.service dnsmasq.service network-online.target
 Before=httpd.service
 
 [Install]
