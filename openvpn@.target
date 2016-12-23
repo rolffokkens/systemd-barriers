@@ -1,5 +1,5 @@
 [Unit]
-Description=DNS/OpenVPN barrier
+Description=Network/OpenVPN barrier
 After=network-online.target
 Before=openvpn@%i.service
 
