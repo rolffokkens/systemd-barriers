@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/OpenVPN barrier
+After=network-online.target
+Before=openvpn@%i.service
+
+[Install]
+WantedBy=multi-user.target
