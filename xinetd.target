@@ -1,6 +1,6 @@
 [Unit]
 Description=DNS/Xinetd barrier
-After=named.service dnsmasq.service
+After=named.service dnsmasq.service network-online.target
 Before=xinetd.service
 
 [Install]
