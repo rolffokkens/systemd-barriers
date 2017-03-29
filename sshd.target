@@ -1,0 +1,7 @@
+[Unit]
+Description=Network-online / SSH daemon barrier
+After=network-online.target
+Before=sshd.service
+
+[Install]
+WantedBy=multi-user.target
