@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/Xinetd barrier
+After=named.service dnsmasq.service network-online.target
+Before=haproxy.service
+
+[Install]
+WantedBy=multi-user.target
