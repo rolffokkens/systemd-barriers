@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/memcached barrier
+After=named.service dnsmasq.service
+Before=memcached.service
+
+[Install]
+WantedBy=multi-user.target
