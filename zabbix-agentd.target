@@ -1,0 +1,7 @@
+[Unit]
+Description=SSSD/Zabbix barrier
+After=sssd.service
+Before=zabbix-agentd.service
+
+[Install]
+WantedBy=multi-user.target
