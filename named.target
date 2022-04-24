@@ -1,0 +1,7 @@
+[Unit]
+Description=Network-online / named daemon barrier
+After=network-online.target
+Before=named.service
+
+[Install]
+WantedBy=multi-user.target
