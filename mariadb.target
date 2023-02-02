@@ -1,7 +1,7 @@
 [Unit]
-Description=Network-online / named daemon barrier
-After=network-online.target
-Before=named.service
+Description=Network-online / mariadb barrier
+After=sssd.service network-online.target
+Before=mariadb.service
 
 [Install]
 WantedBy=multi-user.target
