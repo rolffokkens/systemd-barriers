@@ -1,0 +1,7 @@
+[Unit]
+Description=DNS/NGINX barrier
+After=named.service dnsmasq.service network-online.target
+Before=nginx.service
+
+[Install]
+WantedBy=multi-user.target

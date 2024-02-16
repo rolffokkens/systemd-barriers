@@ -1,8 +1,8 @@
 %global gitcommit 8b2febb
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
-%global units       aiccu cron postfix sssd keepalived httpd xinetd sshd haproxy openvpn@
-%global start_units aiccu cron postfix sssd keepalived httpd xinetd sshd haproxy
+%global units       aiccu cron postfix sssd keepalived httpd nginx xinetd sshd haproxy openvpn@
+%global start_units aiccu cron postfix sssd keepalived httpd nginx xinetd sshd haproxy
 %endif
 
 Summary: Systemd barriers that force proper strict ordering for some services
